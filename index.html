@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+        <div>
+            <h1 class="city" id="city">القاهرة</h1>
+            <h6 class="date" id="date"> السبت 15 يناير 2024</h6>
+
+        </div>
+        <hr>
+        <!-- start prayes -->
+        <div class="prayers">
+
+            <div class="prayer">
+                <h3 class="prayer-name">الفجر</h3>
+                <div class="prayer-date">
+                    <P id="fajr-time"> 4:30</P>
+                </div>
+            </div>
+
+            <div class="prayer">
+                <h3 class="prayer-name">الشروق</h3>
+                <div class="prayer-date">
+                    <P id="sunrise"> 06:50 </P>
+                </div>
+            </div>
+
+            <div class="prayer">
+                <h3 class="prayer-name">الظهر</h3>
+                <div class="prayer-date">
+                    <P id="dhuhr">04 : 50</P>
+                </div>
+            </div>
+
+
+            <div class="prayer">
+                <h3 class="prayer-name">العصر</h3>
+                <div class="prayer-date">
+                    <P id="asr">04 : 50</P>
+                </div>
+            </div>
+
+
+            <div class="prayer">
+                <h3 class="prayer-name">المغرب</h3>
+                <div class="prayer-date">
+                    <P id="maghrib">04 : 50</P>
+                </div>
+            </div>
+
+
+            <div class="prayer">
+                <h3 class="prayer-name">العشاء</h3>
+                <div class="prayer-date">
+                    <P id="isha">04 : 50</P>
+                </div>
+            </div>
+
+        </div>
+        <!-- end prayes -->
+        <!-- start select -->
+        <div class="cities-div">
+            <select class="cities" name="" id="cities"> </select>
+        </div>
+        <!-- end select -->
+
+    </main>
+
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

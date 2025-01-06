@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    direction: rtl;
+    font-family: "Cairo", serif;
+    color: white;
+    margin: 0;
+    background: linear-gradient(90deg, #001F3F, #1E90FF, #87CEEB);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Animation for Gradient Background */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* City Name */
+.city {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+/* Date */
+.date {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+/* Horizontal Line */
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+/* Prayers Section */
+.prayers {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Prayer Card */
+.prayer {
+    flex: 1 1 calc(16.66% - 10px);
+    /* 6 items per row */
+    max-width: 16%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prayer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Prayer Name */
+.prayer-name {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Prayer Time */
+.prayer-date {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .prayer {
+        flex: 1 1 calc(33.33% - 10px);
+        /* 3 items per row */
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prayer {
+        flex: 1 1 calc(50% - 10px);
+        /* 2 items per row */
+        max-width: 45%;
+    }
+
+    .city {
+        font-size: 2.5rem;
+    }
+
+    .date {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .prayer {
+        flex: 1 1 100%;
+        /* 1 item per row */
+        max-width: 100%;
+    }
+
+    .city {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+}
+
+/* stat select  */
+
+.cities-div {
+    margin: 20px;
+}
+
+.cities {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* end select  */
